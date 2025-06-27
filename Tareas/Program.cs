@@ -40,10 +40,11 @@ foreach (var tarea in listaTareas)
 
 string json = JsonSerializer.Serialize(listaTareas);
 
-string directorio = @"c:\Users\PC\Desktop\tl1-tp10-2025-Brunonahuel22\tareas.json";
+string directorio = @"c:\Users\PC\Desktop\tl1-tp10-2025-Brunonahuel22\Tareas\tareas.json";
 
 File.WriteAllText(directorio, json);
 if (File.Exists(directorio))
 {
     Console.WriteLine("Archivo Creado");
 }
+
